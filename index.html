@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroWarn </title>
+    <link rel="icon" type="image/png" href="images/logo-n.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-neurowarn.png" alt="NeuroWarn Logo" class="logo" id="sidebar-logo">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="index.html" class="menu-link">
+                    <img src="images/sidebar-apex.png" alt="Home" class="icon">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="eeg.html" class="menu-link">
+                    <img src="images/sidebar-brain.png" alt="EEG Status" class="icon">
+                    <span>EEG Status</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="wheelchair.html" class="menu-link">
+                    <img src="images/sidebar-wheelchair.png" alt="Wheelchair Status" class="icon">
+                    <span>Wheelchair Status</span>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+    
+    
+    
+
+
+    <div class="status-dashboard">
+        <div class="battery-status">
+            <span>EEG Battery: 100%</span>
+            <span>Wheelchair Battery: 90%</span>
+        </div>
+        <div class="main-display">
+
+            <div class="left-panel">
+                <div class="circle">
+               
+                        <img src="images/green-bar.png" alt="Segment 1" class="segment-image" style="transform: rotate(0deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 2" class="segment-image" style="transform: rotate(30deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 3" class="segment-image" style="transform: rotate(60deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 4" class="segment-image" style="transform: rotate(90deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 5" class="segment-image" style="transform: rotate(120deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 6" class="segment-image" style="transform: rotate(150deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 7" class="segment-image" style="transform: rotate(180deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 8" class="segment-image" style="transform: rotate(210deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 9" class="segment-image" style="transform: rotate(240deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 10" class="segment-image" style="transform: rotate(270deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 11" class="segment-image" style="transform: rotate(300deg) translateX(105px);">
+                        <img src="images/green-bar.png" alt="Segment 12" class="segment-image" style="transform: rotate(330deg) translateX(105px);">
+        
+    
+                    <img src="images/panel-wheelchair.png"class="wheelchair-image" alt="Obstacle Detector">
+                    <span>Obstacle <br>Detector</span>
+                </div>
+            </div>
+
+            
+            <div class="center-panel">
+                <h2>Current Path</h2>
+                <h1>Forward</h1>
+                <hr>
+                <h3>Safe</h3> <p>No obstacles detected ahead.<br>You may proceed Forward.</p>
+                    
+                <div class="svg-container">
+                    <svg width="800" height="250" viewBox="0 0 1253 418" fill="none" >
+                        <defs>
+                            <!-- Define a linear gradient for the fill of the first diagonal path -->
+                            <linearGradient id="firstPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+                            </linearGradient>
+                
+                            <!-- Define a linear gradient for the fill of the second diagonal path -->
+                            <linearGradient id="secondPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+                            </linearGradient>
+                
+                            <!-- Define a linear gradient for the stroke (border) of the first diagonal path -->
+                            <linearGradient id="firstPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                                <stop offset="20%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+                            </linearGradient>
+                
+                            <!-- Define a linear gradient for the stroke (border) of the second diagonal path -->
+                            <linearGradient id="secondPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                                <stop offset="20%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+                            </linearGradient>
+                        </defs>
+                
+                        <!-- First Diagonal Path with Fading Gradient for Fill and Stroke -->
+                        <path d="M700.657 2L1247.05 416H6.17284L577.992 2H700.657Z" fill="url(#firstPathFillGradient)" stroke="url(#firstPathStrokeGradient)" stroke-width="4"/>
+                
+                        <!-- Second Diagonal Path with Fading Gradient for Fill and Stroke -->
+                        <path d="M520.841 2L927.109 401H5.05389L430.229 2H520.841Z" fill="url(#secondPathFillGradient)" stroke="url(#secondPathStrokeGradient)" stroke-width="4" transform="translate(160, 7)" />
+                
+                        <!-- Ellipses - moved lower -->
+                        <ellipse cx="626.5" cy="300" rx="112.5" ry="35" fill="#d4d4d4" />
+                        <ellipse cx="626.5" cy="300" rx="75" ry="22.5" fill="#3366CC" />
+                    </svg>
+                </div>
+                
+                
+
+                
+                        
+                        
+          
+            </div>
+   
+
+            
+            <div class="right-panel">
+                <div class="circle">
+                 
+                    <img src="images/gray-bar.png" alt="Segment 1" class="right-segment-image" style="transform: rotate(0deg) translateX(95px);">
+                    <img src="images/gray-bar.png" alt="Segment 2" class="right-segment-image" style="transform: rotate(90deg) translateX(95px);">
+                    <img src="images/gray-bar.png" alt="Segment 3" class="right-segment-image" style="transform: rotate(180deg) translateX(95px);">
+                    <img src="images/orange-bar.png" alt="Segment 4" class="right-segment-image" style="transform: rotate(270deg) translateX(95px);">
+         
+
+                    <img src="images/panel-path.png"class="panel-image" alt="Predicted Path">
+                    <span>Predicted <br> Path</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

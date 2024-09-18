@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+body {
+    transition: opacity 0.5s ease-out;
+}
+
+
+.status-dashboard {
+    width: 95%; /* Changed to 100% to fit the entire width */
+    height: 90%; /* Changed to 100% to fit the entire height */
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-right: 3%;
+    border-radius: 15px;
+    background-color:  #1F1F1F;
+}
+/* Remove underline and default formatting for the links */
+a.logo-link, a.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Additional styling to maintain hover effects */
+a.menu-link:hover {
+    border-radius: 30px;
+}
+
+
+.battery-status {
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: #A6A6A6;
+    font-size: 14px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.battery-status span {
+    padding: 20px;
+    font-family: "Michroma", sans-serif;
+    color: #555555;
+}
+
+.main-display {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-grow: 1;
+}
+
+.left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Ensure panels grow to fill the available space */
+    max-width: 45%; /* Ensure panels don't exceed 45% of the width */
+}
+
+
+
+.center-panel {
+    text-align: center;
+    position: relative;
+    font-family: "Michroma", sans-serif;
+    margin-top: 1%;
+
+}
+
+.center-panel h3 {
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    
+}
+.center-panel h2 {
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    
+}
+
+.center-panel h1 {
+    font-size: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+    color: #FFFFFF;
+}
+
+hr{
+    border: 0.75px solid #545454;
+}
+
+.center-panel p {
+    margin-top: 4%;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.circle img {
+
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.circle {
+    position: relative; /* Add this line */
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */   
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.circle span{
+    font-size: 10px;
+    font-family:"Michroma", sans-serif;
+    text-align: center;
+}
+
+.segment-image {
+    position: absolute;
+    width: 50%; /* Adjust this according to your image width */
+    transform-origin: center;
+}
+
+.right-segment-image {
+    position: absolute;
+    width: 80%; /* Adjust this according to your image width */
+    transform-origin: center;
+}
+
+
+.segmented-circle {
+    position: absolute;
+    width: 200px; /* Adjusted for a wider diameter */
+    height: 200px; /* Adjusted for a wider diameter */
+    top: 50%; /* Center the segmented circle */
+    left: 50%; /* Center the segmented circle */
+    transform: translate(-50%, -50%); /* Center the segmented circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.segment {
+    position: absolute;
+    width: 10px;
+    height: 28px;
+    background-color: #55e934; /* Adjust this to red for specific segments */
+    border-radius: 2px;
+    transform-origin: center;
+}
+
+
+/* New style specifically for the right-panel circle */
+.right-panel .circle .panel-image  {
+    width: 25%; /* Make the image smaller */
+    margin-bottom: 4%;
+}
+.left-panel .circle .wheelchair-image  {
+    width: 45%; /* Make the image smaller */
+    margin-bottom: 4%;
+}
+.svg-container {
+    position: absolute;
+    bottom: 0px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:  #1A1A1A;
+    display: flex;  
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #1A1A1A;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+    padding: 40px 15px;
+}
+
+.toggle-btn span {
+    color: white;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+
+.logo-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed .logo {
+    width: 40px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10% 0%;
+}
+
+.menu-item span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    color: #A6A6A6;
+}
+
+.sidebar.collapsed .menu-item span {
+    opacity: 0;
+}
+
+.menu-item:hover {
+    background-color: #1F1F1F;
+    border-radius: 30px;
+}
+.menu-item.highlight {
+    background-color: #1F1F1F;
+    border-radius: 30px;
+}
+
+.icon {
+    width: 31px;
+    margin-right: 10px;
+    transition: margin-right 0.3s ease;
+}
+
+.sidebar.collapsed .icon {
+    margin-right: 0px;
+}
+
+
+.main-content {
+    background-color: #1F1F1F;
+    color: white;
+    flex: 1;
+    margin: 60px 45px;
+    border-radius: 15px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .main-content {
+    margin-left: 10px;
+}
+
+.sidebar.expanded ~ .main-content {
+    margin-left: 250px;
+}

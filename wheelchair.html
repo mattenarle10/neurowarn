@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroWarn - EEG Status</title>
+    <link rel="icon" type="image/png" href="images/logo-n.png">
+    <link rel="stylesheet" href="wheelchairstyles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-neurowarn.png" alt="NeuroWarn Logo" class="logo" id="sidebar-logo">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="index.html" class="menu-link">
+                    <img src="images/sidebar-apex.png" alt="Home" class="icon">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="eeg.html" class="menu-link">
+                    <img src="images/sidebar-brain.png" alt="EEG Status" class="icon">
+                    <span>EEG Status</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                    <img src="images/sidebar-wheelchair.png" alt="Wheelchair Status" class="icon">
+                    <span>Wheelchair Status</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="status-dashboard">
+        <div class="left-column">
+            <div class="brain-container">
+                <img src="images/wheelchair-3d.png" alt="3D Brain" class="brain-image">
+                <div class="background-grid"></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Wheelchair <br> Status </h1>
+           
+            <div class="status-item">
+                <div class="status-header">
+                    <span>Battery</span>
+                    <span class="percentage">100%</span>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="status-item">
+                <div class="status-header">
+                    <span>Lidar Status</span>
+                </div>
+                <div class="lidar-status-row">
+                    <div class="lidar-status-column">
+                        <div class="lidar-status-item">
+                            <span class="lidar-circle"></span> Lidar 1 : Online
+                        </div>
+                    </div>
+                    <div class="lidar-status-column">
+                        <div class="lidar-status-item">
+                            <span class="lidar-circle"></span> Lidar 2 : Online
+                        </div>
+                    </div>
+                </div>
+                <div class="lidar-status-row">
+                    <div class="lidar-status-column">
+                        <div class="lidar-status-item">
+                            <span class="lidar-circle"></span> Lidar 3 : Online
+                        </div>
+                    </div>
+                    <div class="lidar-status-column">
+                        <div class="lidar-status-item">
+                            <span class="lidar-circle"></span> Lidar 4 : Online
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-item">
+                <div class="status-header">
+                    <span>Motor Status</span>
+                </div>
+                <div class="motor-status-row">
+                    <div class="motor-status-column">
+                        <div class="motor-status-item">
+                            <span class="motor-circle"></span> Motor 1 : Online
+                        </div>
+                    </div>
+                    <div class="motor-status-column">
+                        <div class="motor-status-item">
+                            <span class="motor-circle"></span> Motor 2 : Online
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroWarn - EEG Status</title>
+    <link rel="icon" type="image/png" href="images/logo-n.png">
+    <link rel="stylesheet" href="eegstyles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-neurowarn.png" alt="NeuroWarn Logo" class="logo" id="sidebar-logo">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="index.html" class="menu-link">
+                    <img src="images/sidebar-apex.png" alt="Home" class="icon">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <img src="images/sidebar-brain.png" alt="EEG Status" class="icon">
+                <span>EEG Status</span>
+            </li>
+            <li class="menu-item">
+                <a href="wheelchair.html" class="menu-link">
+                    <img src="images/sidebar-wheelchair.png" alt="Wheelchair Status" class="icon">
+                    <span>Wheelchair Status</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="status-dashboard">
+        <div class="left-column">
+            <div class="brain-container">
+                <img src="images/brain-3d.png" alt="3D Brain" class="brain-image">
+                <div class="background-grid"></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>EEG Status</h1>
+            
+            <div class="status-item">
+                <div class="status-header">
+                    <span>Battery</span>
+                    <span class="percentage">100%</span>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="status-header">
+                    <span>Contact Quality</span>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="status-header">
+                    <span>EEG Quality</span>
+                    <span class="percentage">70%</span>
+                </div>
+                <div class="status-bar">
+                    <div class="status-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
