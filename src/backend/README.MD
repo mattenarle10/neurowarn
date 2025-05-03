@@ -18,20 +18,85 @@ This directory contains the Python code that powers the brain-computer interface
 - `control.py` - Basic wheelchair control logic
 - `ai_copypaste.py` - RNN model implementation
 
+## 💻 Prerequisites
+
+Before setting up the NeuroWarn BCI backend, ensure you have the following prerequisites installed on your system:
+
+### 1. Python
+
+- **Windows**:
+  - Download the installer from [python.org](https://www.python.org/downloads/) (Python 3.8 or newer)
+  - During installation, check "Add Python to PATH"
+  - Verify installation: `python --version`
+
+- **macOS**:
+  - Install using Homebrew: `brew install python`
+  - Or download from [python.org](https://www.python.org/downloads/)
+  - Verify installation: `python3 --version`
+
+- **Linux**:
+  - Ubuntu/Debian: `sudo apt update && sudo apt install python3 python3-pip python3-venv`
+  - Verify installation: `python3 --version`
+
+### 2. Git
+
+- **Windows**:
+  - Download from [git-scm.com](https://git-scm.com/download/win)
+  - Use default installation options
+  - Verify installation: `git --version`
+
+- **macOS**:
+  - Install using Homebrew: `brew install git`
+  - Or download from [git-scm.com](https://git-scm.com/download/mac)
+  - Verify installation: `git --version`
+
+- **Linux**:
+  - Ubuntu/Debian: `sudo apt update && sudo apt install git`
+  - Verify installation: `git --version`
+
+### 3. Arduino IDE
+
+- Download from [arduino.cc](https://www.arduino.cc/en/software)
+- Install required libraries:
+  - VL53L0X (for LIDAR sensors)
+  - ArduinoJson (for data processing)
+
 ## 🚀 Setup & Installation
 
-```bash
-# Create a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+### 1. Clone the Repository
 
-# Install dependencies
-pip install -r requirements.txt
+```bash
+# Clone the repository
+git clone https://github.com/mattenarle10/neurowarn.git
+cd neurowarn/src/backend
 ```
+
+### 2. Create and Activate Virtual Environment
+
+```bash
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+# Install required Python packages
+pip install -r requirements.txt
+``` 
 
 ## ▶️ Running the System
 
 ```bash
+# Make sure your virtual environment is activated
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+
 # Start the main program
 python wheelchair_drive.py
 ```
