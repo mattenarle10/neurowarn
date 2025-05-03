@@ -47,7 +47,6 @@ NeuroWarn BCI is a safety enhancement system for EEG-controlled wheelchairs that
 
 ## 📚 Documentation
 
-- 📖 [References](./docs/Neurowarn%20References.pdf) - Research references
 - 📋 [User Manual](https://link-to-your-user-manual.pdf) - Complete usage guide
 - 📄 [Thesis Manuscript](https://link-to-your-thesis-manuscript.pdf) - Academic paper
 
