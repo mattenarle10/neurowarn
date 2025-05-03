@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroWarn </title>
+    <link rel="icon" type="image/png" href="images/logo-n.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo-neurowarn.png" alt="NeuroWarn Logo" class="logo" id="sidebar-logo">
+            </a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="index.html" class="menu-link">
+                    <img src="images/sidebar-apex.png" alt="Home" class="icon">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="eeg.html" class="menu-link">
+                    <img src="images/sidebar-brain.png" alt="EEG Status" class="icon">
+                    <span>EEG Status</span>
+                </a>
+            </li>
+      
+        </ul>
+        
+    </div>
+    
+    
+    
+
+
+    <div class="status-dashboard">
+        <div class="battery-status">
+            <span id="eeg-battery">EEG Battery: <span id="eeg-battery-level">100%</span></span>
+          <!----use eeg quality instead of wheelchair batt -->    <span id="wheelchair-battery">EEG Quality: <span id="wheelchair-battery-level">90%</span></span>
+        </div>
+        
+        <div class="main-display">
+
+            <div class="left-panel">
+                <div class="circle">
+                  <!----darker gray same as right panel -->  <img src="images/grayy-bar.png" alt="Segment 1" class="segment-image" style="transform: rotate(0deg) translateX(105px);">
+                    <img src="images/grayy-bar.png" alt="Segment 2" class="segment-image" style="transform: rotate(30deg) translateX(105px);">
+                    <img src="images/green-bar.png" alt="Segment 3" class="segment-image" style="transform: rotate(60deg) translateX(105px);" id="segment3">
+                    <img src="images/green-bar.png" alt="Segment 4" class="segment-image" style="transform: rotate(90deg) translateX(105px);" id="segment4">
+                    <img src="images/green-bar.png" alt="Segment 5" class="segment-image" style="transform: rotate(120deg) translateX(105px);" id="segment5">
+                    <img src="images/grayy-bar.png" alt="Segment 6" class="segment-image" style="transform: rotate(150deg) translateX(105px);">
+                    <img src="images/grayy-bar.png" alt="Segment 7" class="segment-image" style="transform: rotate(180deg) translateX(105px);">
+                    <img src="images/grayy-bar.png" alt="Segment 8" class="segment-image" style="transform: rotate(210deg) translateX(105px);">
+                    <img src="images/green-bar.png" alt="Segment 9" class="segment-image" style="transform: rotate(240deg) translateX(105px);" id="segment9">
+                    <img src="images/green-bar.png" alt="Segment 10" class="segment-image" style="transform: rotate(270deg) translateX(105px);" id="segment10">
+                    <img src="images/green-bar.png" alt="Segment 11" class="segment-image" style="transform: rotate(300deg) translateX(105px);" id="segment11">
+                    <img src="images/grayy-bar.png" alt="Segment 12" class="segment-image" style="transform: rotate(330deg) translateX(105px);">
+                    
+                    <img src="images/panel-wheelchair.png" class="wheelchair-image" alt="Obstacle Detector">
+                    <span>Obstacle <br>Detector</span>
+                </div>
+                
+            </div>
+
+            <div class="center-panel">
+                <h2>Current Path</h2>
+                <h1 id="current-path">Forward</h1>
+                <hr>
+                <h3 id="safety-status">Safe</h3>
+                <p id="safety-message">No obstacles detected ahead.<br>You may proceed Forward.</p>
+                
+                <div class="svg-container">
+                    <img src="images/paths/leftpath.png" alt="Straight Path" width="800" height="250">
+                </div>
+            </div>
+            
+            
+
+            
+            <div class="right-panel">
+                <div class="circle">
+                 
+                    <img src="images/gray-bar.png" alt="Segment 1 - right" class="right-segment-image" style="transform: rotate(0deg) translateX(95px);">
+                    <img src="images/gray-bar.png" alt="Segment 2 - backward" class="right-segment-image" style="transform: rotate(90deg) translateX(95px);">
+                    <img src="images/gray-bar.png" alt="Segment 3 - left" class="right-segment-image" style="transform: rotate(180deg) translateX(95px);">
+                    <img src="images/orange-bar.png" alt="Segment 4 - forward" class="right-segment-image" style="transform: rotate(270deg) translateX(95px);">
+         
+
+                    <img src="images/panel-path.png"class="panel-image" alt="Predicted Path">
+                    <span>Predicted <br> Path</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

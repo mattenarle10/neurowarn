@@ -1,0 +1,51 @@
+<div class="svg-container">
+    <svg width="800" height="250" viewBox="0 0 1253 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- Define a linear gradient for the fill of the first diagonal path -->
+            <linearGradient id="firstPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the fill of the second diagonal path -->
+            <linearGradient id="secondPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the stroke (border) of the first diagonal path -->
+            <linearGradient id="firstPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                <stop offset="30%" style="stop-color:#1F6989;stop-opacity:0.1" />
+                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the stroke (border) of the second diagonal path -->
+            <linearGradient id="secondPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#1F6989;stop-opacity:0.1" />
+                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+            </linearGradient>
+        </defs>
+
+        <path d="M1197.71 313.549L7.28592 320.955C152.764 233.577 282.929 159.163 386.822 112.323C534.107 45.9201 625.672 28.1776 725.214 17.4886C762.415 13.4938 817.375 9.62108 863.063 6.74605C885.901 5.30891 906.412 4.12169 921.213 3.29375C928.614 2.87979 934.587 2.55566 938.709 2.33503C940.771 2.22472 942.369 2.14028 943.453 2.08343C943.881 2.06095 944.229 2.04278 944.493 2.02903L989.64 29.2052L880 32.5001C879.99 32.5001 879.98 32.5001 879.97 32.5001C865.135 32.5019 847.807 33.852 833.326 37.6111C826.082 39.4916 819.457 41.998 814.196 45.3048C808.934 48.6114 804.895 52.8094 803.105 58.1101C801.302 63.4479 801.894 69.5614 805.221 76.4359C808.533 83.2781 814.597 90.9773 823.934 99.6673C842.61 117.048 874.759 138.738 925.553 165.762C925.556 165.763 925.558 165.764 925.561 165.766L1197.71 313.549Z" 
+        fill="url(#firstPathFillGradient)" stroke="url(#firstPathStrokeGradient)" stroke-width="4"/>
+
+        <path d="M658.834 10.5069L658.781 10.5113L658.729 10.5185C640.468 13.02 621.45 15.9992 604.174 20.7059C586.92 25.4069 571.224 31.8764 559.72 41.4636C552.449 47.5226 549.585 55.1636 550.474 63.8884C551.348 72.4605 555.825 81.9627 562.884 92.0673C577.016 112.297 602.065 135.725 632.177 160.178C673.7 193.896 725.217 229.843 771.769 262.326C790.78 275.591 808.963 288.278 825.299 300H5.23013C91.7273 222.735 158.924 177.302 246.096 120.173C323.883 69.1941 390.161 45.434 445.953 32.4479C488.743 22.4882 588.562 6.01996 654.425 2.5068L693.981 7.57801L658.834 10.5069Z" 
+        transform="translate(180 10) scale(1.01)" fill="url(#secondPathFillGradient)" stroke="url(#secondPathStrokeGradient)" stroke-width="4"/>
+
+        <!-- Ellipses - moved lower -->
+        <ellipse cx="616.5" cy="220" rx="160" ry="55" fill="#d4d4d4" />
+        <ellipse cx="616.5" cy="220" rx="100" ry="35" fill="#3366CC" />
+    </svg>
+</div>

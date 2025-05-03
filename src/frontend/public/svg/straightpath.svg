@@ -1,0 +1,52 @@
+<div class="svg-container">
+    <svg width="800" height="250" viewBox="0 0 1253 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- Define a linear gradient for the fill of the first diagonal path -->
+            <linearGradient id="firstPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the fill of the second diagonal path -->
+            <linearGradient id="secondPathFillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#202227;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#202227;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#202227;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#202227;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the stroke (border) of the first diagonal path -->
+            <linearGradient id="firstPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+            </linearGradient>
+
+            <!-- Define a linear gradient for the stroke (border) of the second diagonal path -->
+            <linearGradient id="secondPathStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#1F6989;stop-opacity:0" />
+                <stop offset="20%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="50%" style="stop-color:#1F6989;stop-opacity:1" />
+                <stop offset="80%" style="stop-color:#1F6989;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#1F6989;stop-opacity:0" />
+            </linearGradient>
+        </defs>
+
+        <!-- First Diagonal Path with Fading Gradient for Fill and Stroke -->
+        <path d="M700.657 2L1247.05 416H6.17284L577.992 2H700.657Z" fill="url(#firstPathFillGradient)" stroke="url(#firstPathStrokeGradient)" stroke-width="4"/>
+
+        <!-- Second Diagonal Path with Fading Gradient for Fill and Stroke -->
+        <path d="M520.841 2L927.109 401H5.05389L430.229 2H520.841Z" fill="url(#secondPathFillGradient)" stroke="url(#secondPathStrokeGradient)" stroke-width="4" transform="translate(160, 7)" />
+
+
+    <ellipse cx="626.5" cy="300" rx="160" ry="55" fill="#d4d4d4" />
+    <ellipse cx="626.5" cy="300" rx="100" ry="35" fill="#3366CC" />
+
+    </svg>
+</div>
