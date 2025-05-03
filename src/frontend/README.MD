@@ -17,6 +17,10 @@ This directory contains the web dashboard for monitoring and visualizing the Neu
 ## 🚀 Setup & Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/mattenarle10/neurowarn.git
+cd neurowarn/src/frontend
+
 # Install dependencies
 npm install
 
