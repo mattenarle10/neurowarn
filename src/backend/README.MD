@@ -20,15 +20,12 @@ This directory contains the Python code that powers the brain-computer interface
 
 ## 🚀 Setup & Installation
 
-### 1. Clone the Repository
 
 ```bash
 # Clone the repository
 git clone https://github.com/mattenarle10/neurowarn.git
 cd neurowarn/src/backend
 ```
-
-### 2. Create and Activate Virtual Environment
 
 ```bash
 # Windows
@@ -40,14 +37,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install Dependencies
-
 ```bash
 # Install required Python packages
 pip install -r requirements.txt
 ``` 
-
-## ▶️ Running the System
 
 ```bash
 # Make sure your virtual environment is activated
