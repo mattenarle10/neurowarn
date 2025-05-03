@@ -1,5 +1,3 @@
-# 🧠 NeuroWarn BCI
-
 ![NeuroWarn BCI Banner](./assets/logo-neurowarn.png)
 
 > **NeuroWarn BCI: Enhancing Safety in EEG-Controlled Wheelchairs with an RNN-Based Warning System**
