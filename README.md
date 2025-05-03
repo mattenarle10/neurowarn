@@ -8,11 +8,11 @@ NeuroWarn BCI is a safety enhancement system for EEG-controlled wheelchairs that
 
 ## 👥 Development Team
 
-- **Alecxander Jamille Andaya** - EEG Signal Processing
-- **Kyle E. Billones** - Hardware Integration
-- **Matthew Ariel A. Enarle** - Web Dashboard Development
-- **Jasper M. Nillos** - RNN Model Implementation
-- **Shayne B. Yanson** - System Architecture
+- **Alecxander Jamille Andaya** 
+- **Kyle E. Billones** 
+- **Matthew Ariel A. Enarle**
+- **Jasper M. Nillos** 
+- **Shayne B. Yanson**
 
 *College of Information and Communications Technology*  
 *West Visayas State University*  
