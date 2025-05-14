@@ -1,4 +1,4 @@
-# 🧠 Neurowarn BCI -- HARDWARE SETUP
+# Hardware Setup
 
 ---
 
