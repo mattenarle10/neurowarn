@@ -1,7 +1,4 @@
-# 🧠 Neurowarn BCI System
-
-Welcome to the **Neurowarn BCI System** GitHub repo!  
-This project integrates a Brain-Computer Interface (BCI) with a smart wheelchair for hands-free navigation using EEG signals.
+# 🧠 Neurowarn BCI -- HARDWARE SETUP
 
 ---
 
