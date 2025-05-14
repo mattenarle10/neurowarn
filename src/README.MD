@@ -6,7 +6,7 @@ This directory contains all source code for the NeuroWarn BCI system.
 
 - 🔌 **[backend](./backend)** - Python code for EEG processing and hardware control
 - 🖥️ **[frontend](./frontend)** - Web dashboard for monitoring and visualization
-- 🛠️ **[hardware](./hardware)** - Arduino sketches and hardware configuration
+- 🛠️ **[hardware](./hardware)** - Hardware setup and configuration
 
 ## 🔄 Data Flow
 
