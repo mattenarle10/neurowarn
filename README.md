@@ -23,7 +23,6 @@ NeuroWarn BCI is a safety enhancement system for EEG-controlled wheelchairs that
 - 🖥️ [/src](./src) - Source code for the entire system
   - 🔌 [/src/backend](./src/backend) - Python code for BCI and hardware control
   - 🌐 [/src/frontend](./src/frontend) - Web dashboard interface
-  - 🛠️ [/src/hardware](./src/hardware) - Arduino code and hardware configurations
 - 📝 [/docs](./docs) - Documentation and user guides
 - 🔧 [/hardware](./hardware) - Hardware schematics and configurations
 - 🤖 [/models](./src/models) - Trained RNN models
